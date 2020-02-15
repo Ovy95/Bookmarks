@@ -1,11 +1,9 @@
 <ul>
   <% @bookmarks.each do |bookmark| %>
     <li> ID ; <%= bookmark.id %>Title <%= bookmark.title %>  Websites<%= bookmark.url %> 
+    <form action="/"> 
+  <input type="submit" value="Delete"/>
+</form>
     </li>
   <% end %>
 </ul>
-
-
-<form action="/bookmarks/new"> 
-  <input type="submit" value="Add"/>
-</form>
